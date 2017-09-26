@@ -1,2 +1,2 @@
-body{background:#aaa;display:flex}
+.center-vertically{display:flex;flex-direction:column;justify-content:center}.margin-top-bottom{margin:50px 0}.text-align-center{text-align:center}body{min-height:100vh;background:#e6d6c8;font-size:100%}header h1{font-family:Raleway;font-size:400%}main h2,aside h2{margin:50px 0;font-size:230%}
 /*# sourceMappingURL=app.css.map */

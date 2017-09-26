@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
   // 1. All configuration goes here 
   grunt.initConfig({
@@ -40,9 +40,9 @@ module.exports = function(grunt) {
       dynamic: {
         files: [{
           expand: true,
-          cwd: 'assets/img/',
+          cwd: '_dev/assets/images/',
           src: ['**/*.{png,jpg,gif}'],
-          dest: 'assets/img/'
+          dest: 'assets/'
         }]
       }
     },
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
         }
       },
       css: {
-        files: '_dev/sass/app.sass',
+        files: '_dev/sass/app.scss',
         tasks: ['sass', 'autoprefixer']
       }
     } //End watch
@@ -69,7 +69,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-typescript');
-  
+
   // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
   grunt.registerTask(
     'default', [
