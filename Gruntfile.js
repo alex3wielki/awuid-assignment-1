@@ -3,16 +3,16 @@ module.exports = function(grunt) {
   // 1. All configuration goes here 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    typescript: {
-      base: {
-        src: ['_dev/ts/*.ts'],
-        dest: '_dev/js/app.js',
-        options: {
-          module: 'amd',
-          target: 'es5'
-        }
-      }
-    },
+    // typescript: {
+    //   base: {
+    //     src: ['_dev/ts/*.ts'],
+    //     dest: '_dev/js/app.js',
+    //     options: {
+    //       module: 'amd',
+    //       target: 'es5'
+    //     }
+    //   }
+    // },
     uglify: {
       build: {
         src: "_dev/js/app.js",

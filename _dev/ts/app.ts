@@ -1,1 +1,3 @@
-console.log('App works');
+for(let i : number = 0; i<10;i++){
+    console.log('Hola amigos');
+}
