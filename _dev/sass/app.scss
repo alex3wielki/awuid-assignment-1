@@ -1,5 +1,14 @@
 $lightColor:rgb(222, 206, 190);
 $darkColor: rgb(102, 50, 54);
+// Setting the background and some basic stuff
+body {
+  min-height: 100vh;
+  background: $lightColor;
+  font-size: 100%;
+  text-align: justify;
+}
+
+// Helper classes
 .center-vertically {
   display: flex;
   flex-direction: column;
@@ -10,6 +19,7 @@ $darkColor: rgb(102, 50, 54);
   padding: 20px 0;
 }
 
+// Centering text
 .text-align-center,
 h2,
 h1,
@@ -17,6 +27,7 @@ h3 {
   text-align: center;
 }
 
+// The longest section, 4 collumns
 .long-section {
   border-radius: 20px;
   div:first-of-type {
@@ -27,6 +38,7 @@ h3 {
   }
 }
 
+// Setting the background
 .long-section,
 footer {
   background: $darkColor;
@@ -40,13 +52,7 @@ footer {
   }
 }
 
-body {
-  min-height: 100vh;
-  background: $lightColor;
-  font-size: 100%;
-  text-align: justify;
-}
-
+// Setting the font and background
 header {
   background: $darkColor;
   box-shadow: 0 0 10px $darkColor;
@@ -58,6 +64,7 @@ header {
   }
 }
 
+// Making it look better
 main,
 aside {
   h2 {
@@ -66,6 +73,7 @@ aside {
   }
 }
 
+// Just making it look better
 nav.navbar {
   margin-bottom: 10px;
 }
