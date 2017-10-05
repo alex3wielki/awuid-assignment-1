@@ -16,7 +16,7 @@ body {
 }
 
 .padding-top-bottom {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 // Centering text
@@ -29,11 +29,12 @@ h3 {
 
 // The longest section, 4 collumns
 .long-section {
+  margin-bottom: 10px;
   border-radius: 20px;
   div:first-of-type {
     padding-left: 30px;
   }
-  div:last-of-type{
+  div:last-of-type {
     padding-right: 30px;
   }
 }
@@ -76,4 +77,25 @@ aside {
 // Just making it look better
 nav.navbar {
   margin-bottom: 10px;
+  $borderWidth: 3px;
+  li:first-of-type {
+    border-left: $borderWidth $lightColor solid;
+  }
+  li {
+    border-right: $borderWidth $lightColor solid;
+  }
+  li:hover {
+    border-bottom: $borderWidth $lightColor solid;
+    margin-bottom: -$borderWidth;
+  }
+}
+
+section:nth-of-type(3) {
+  margin-bottom: 20px;
+  article {
+    div:nth-of-type(2) {
+      border-left: 10px $darkColor solid;
+      border-right: 10px $darkColor solid;
+    }
+  }
 }
