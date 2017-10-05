@@ -1,39 +1,71 @@
-.center-vertically {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.margin-top-bottom {
-    margin: 50px 0;
-}
-
-.text-align-center {
-    text-align: center;
-}
-
 $lightColor:rgb(222, 206, 190);
-$darkColor: rgb(102,50,54);
+$darkColor: rgb(102, 50, 54);
+.center-vertically {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.padding-top-bottom {
+  padding: 20px 0;
+}
+
+.text-align-center,
+h2,
+h1,
+h3 {
+  text-align: center;
+}
+
+.long-section {
+  border-radius: 20px;
+  div:first-of-type {
+    padding-left: 30px;
+  }
+  div:last-of-type{
+    padding-right: 30px;
+  }
+}
+
+.long-section,
+footer {
+  background: $darkColor;
+  color: $lightColor; // Just setting some whitespace from the side
+  p:first-of-type,
+  h3:first-of-type {
+    padding-left: 10px;
+  }
+  p:last-of-type {
+    padding-right: 10px;
+  }
+}
 
 body {
-    min-height: 100vh;
-    background: $lightColor;
-    font-size: 100%;
+  min-height: 100vh;
+  background: $lightColor;
+  font-size: 100%;
+  text-align: justify;
 }
 
 header {
-    background: $darkColor;
-    h1 {
-        font-family: Raleway;
-        font-size: 400%;
-        color: $lightColor;
-    }
+  background: $darkColor;
+  box-shadow: 0 0 10px $darkColor;
+  border-radius: 0 0 20px 20px;
+  h1 {
+    font-family: Raleway;
+    font-size: 300%;
+    color: $lightColor;
+  }
 }
 
 main,
 aside {
-    h2 {
-        margin: 50px 0;
-        font-size: 230%;
-    }
+  h2 {
+    margin: 50px 0;
+    font-size: 230%;
+  }
+}
+
+nav.navbar {
+  margin-bottom: 10px;
 }
