@@ -78,15 +78,18 @@ aside {
 nav.navbar {
   margin-bottom: 10px;
   $borderWidth: 3px;
-  li:first-of-type {
-    border-left: $borderWidth $lightColor solid;
-  }
-  li {
-    border-right: $borderWidth $lightColor solid;
-  }
-  li:hover {
-    border-bottom: $borderWidth $lightColor solid;
-    margin-bottom: -$borderWidth;
+  // Making the border appear only on full width screens
+  @media screen and (min-width: 992px) {
+    li:first-of-type {
+      border-left: $borderWidth $lightColor solid;
+    }
+    li {
+      border-right: $borderWidth $lightColor solid;
+    }
+    li:hover {
+      border-bottom: $borderWidth $lightColor solid;
+      margin-bottom: -$borderWidth;
+    }
   }
 }
 
